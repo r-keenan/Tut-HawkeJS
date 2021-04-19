@@ -11,11 +11,13 @@ let myBoolVal = true;
 //  alert("It's not true. ");
 //}
 
-let floatNumber = 1.5;
+let floatNumber = "1.5";
 
 let myStringNum = "10";
 
 myStringNum = Number.parseInt(myStringNum);
+
+floatNumber = Number.parseFloat(floatNumber);
 
 alert(myStringNum + floatNumber);
 

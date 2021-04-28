@@ -1,6 +1,8 @@
 // let firstName = "Ross";
 // let lastName = "Keenan";
 
+const { default: FormItemInput } = require("antd/lib/form/FormItemInput");
+
 // let myAge = 35;
 
 // let myBoolVal = true;
@@ -72,3 +74,44 @@
 //     alert("Fruit is not found");
 //     break;
 // }
+
+//array
+// let yogurts = ["pineapple", "banana", "cheesecake", "vanilla", "key lime"];
+
+//alert(Array.isArray(yogurts));
+
+// alert(`The best flavor of yogurt is ${yogurts[1]}.`);
+
+// alert(`There are ${yogurts.length} flavors of yogurt in the array.`);
+
+// //eliminates the last item
+// yogurts.pop();
+
+// //adds item to the end of an array
+// yogurts.push("blackberry");
+
+// //removes first item in array
+// yogurts.shift();
+
+// //adds item to beginning of list
+// yogurts.unshift("pear");
+
+// //sorts array alphabetically
+// alert(yogurts.sort());
+
+//choosing a section of an array.
+//yogurts = yogurts.slice(0, 3);
+
+// function print(yogurt, message) {
+//   return message + yogurt;
+// }
+
+// function alertToTheScreen(message) {
+//   alert(message);
+// }
+
+// //for loop through array
+// for (let x = 0; yogurts.length > x; x++) {
+//   alertToTheScreen(print(yogurts[x], "I like "));
+// }
+

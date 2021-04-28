@@ -115,3 +115,11 @@ const { default: FormItemInput } = require("antd/lib/form/FormItemInput");
 //   alertToTheScreen(print(yogurts[x], "I like "));
 // }
 
+let car = {
+  color: "red",
+  make: "ford",
+  model: "F150",
+};
+
+alert(car.model);
+alert(car["model"]);

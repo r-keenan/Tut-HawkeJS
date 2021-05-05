@@ -150,6 +150,15 @@ let car = new Car("black", 2021, "Ford", "F150");
 
 myButton.addEventListener("click", car.print.bind(car));
 
+// setTimeout(() => {
+//   alert("Here is the timer");
+// }, 10000);
+
+let interval = setInterval(() => {
+  alert("Here is the interval timer");
+}, 3000);
+
 setTimeout(() => {
-  alert("Here is the timer");
+  clearInterval(interval);
+  alert("Interval has been cleared");
 }, 10000);

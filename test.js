@@ -1,8 +1,6 @@
 // let firstName = "Ross";
 // let lastName = "Keenan";
 
-const { default: FormItemInput } = require("antd/lib/form/FormItemInput");
-
 // let myAge = 35;
 
 // let myBoolVal = true;
@@ -115,11 +113,43 @@ const { default: FormItemInput } = require("antd/lib/form/FormItemInput");
 //   alertToTheScreen(print(yogurts[x], "I like "));
 // }
 
-let car = {
-  color: "red",
-  make: "ford",
-  model: "F150",
-};
+// let car = {
+//   color: "red",
+//   make: "ford",
+//   model: "F150",
+//   print: function () {
+//     //"this" is required due to being nested inside of an object.
+//     alert(this.color + " " + this.make + " " + this.model);
+//   },
+// };
 
-alert(car.model);
-alert(car["model"]);
+//Two different was to call an attribute from an object
+//alert(car.model);
+//alert(car["model"]);
+
+// car.print();
+
+// let myButton = document.getElementById("myButton");
+// myButton.addEventListener("click", function () {
+//   car.print();
+// });
+//can also use this syntax as well
+
+function Car(color, year, make, model) {
+  this.color = color;
+  this.year = year;
+  this.make = make;
+  this.model = model;
+  this.print = function () {
+    //"this" is required due to being nested inside of an object.
+    alert(`${this.color} ${this.year} ${this.make} ${this.model}`);
+  };
+}
+
+let car = new Car("black", 2021, "Ford", "F150");
+
+myButton.addEventListener("click", car.print.bind(car));
+
+setTimeout(() => {
+  alert("Here is the timer");
+}, 10000);
